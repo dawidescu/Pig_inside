@@ -1,0 +1,213 @@
+* {box-sizing:border-box}
+
+/*Global variables*/
+:root {
+    --hover-color: #f48db4;
+    --primary-color: aliceblue;
+}
+@media (min-width:320px) { 
+    body {
+        margin: 8px;
+    }
+ }
+
+
+/*HTML properties*/
+html{ 
+    background-color: black;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--primary-color);
+    scroll-behavior: smooth;
+
+}
+/*LOGO bar*/
+.logo-bar {
+    display: flex;
+    border-bottom: 2px black solid;
+    justify-content:flex-start;
+    padding-left: 25px;
+}
+.logo {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-self: flex-start;
+}
+.restaurant-name {
+    align-self: center;
+    padding: 30px;
+    margin: 20px;
+}
+.sections {
+    margin-bottom: 3rem;
+    padding: 1rem 1.5rem; 
+    box-shadow: 2px gray;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+h1 {
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.nav-item {
+    border-left: solid 2px whitesmoke;
+    padding: 0 5rem;
+
+}
+.nav-item:hover a {
+    background-color: var(--hover-color);
+    color: darkblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav-item:active {
+    background-color: var(--tertiary-color);
+}
+
+/*menu list*/
+.items {
+    list-style: none;
+    display: block;
+}
+.item {
+    border: 2px solid var(--hover-color);
+    border-radius: 30px;
+    border-style: groove;
+    display: grid;
+    padding-left: 20px;
+    grid-template-columns: 0.2fr 0.5fr 4fr 0.5fr 1fr;
+    row-gap: 10px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-items: center;
+
+}
+.item-number {
+    font-weight: bold;
+    font-size: 44px;
+    color: darkgoldenrod;
+    padding: 10px;
+    margin: 15px;
+
+}
+.item-name {
+    font-size: 20px;
+    font-weight: bold;
+    color:darkred;
+    padding: 5px;
+    margin: 10px;
+
+}
+.item-ingredients {
+    font-style: italic;
+    font-size: 18px;
+    margin: 15px;
+}
+.item-price {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    color: darkgoldenrod;
+    padding: 5px;
+    margin: 10px;
+    min-width: 80px;
+}
+.item-order {
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px whitesmoke;
+    padding:10px;
+    min-height:25px; 
+    min-width: 180px;
+    color: darkred;
+}
+.item-order:hover {
+    background-color: var(--hover-color);
+    transition: 0.2s;
+}
+.item-order:active {
+    background-color: blueviolet;
+    transition: 0.2s;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    margin: 15px;
+    font-size: 35px;
+}
+.item-total-order {
+    margin: 20px auto;
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    color: wheat;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    
+
+}
+.item-total {
+    float: inline-end;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    padding: 5px;
+    margin: 10px;
+}
+.cancel-last-item {
+    margin: 20px auto;
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    color: wheat;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.cancel-last-item:hover {
+    background-color: darkgoldenrod;
+    transition: 0.2s;
+}
+.item-total-order:hover {
+    background-color: darkgoldenrod;
+    transition: 0.2s;
+}
+#total {
+    margin: 10px;
+    padding: 10px;
+}
+.item-total p {
+    border-bottom: 3px dotted var(--hover-color);
+    padding: 10px;
+}
+.element {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 2px whitesmoke;
+    padding:10px;
+    min-height:25px; 
+    min-width: 180px;
+    float: center;
+    width: 20rem;
+    
+    
+}

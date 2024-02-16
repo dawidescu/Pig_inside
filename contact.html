@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="./contact-styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <title>Kontakt</title>
+</head>
+
+<body>
+ <!--Logo - href na stronę główną, Name Bar -->
+ <section class="logo-bar">
+    <div class="logo-item">
+        <img 
+        src="./images/logo.png"
+        style="width:100%;"
+        atl="Pig Logo"
+        a href="#index.html"
+        class="logo" />
+    </div>
+    <div class="restaurant-name">
+        <h1>Pig Inside the Gentleman – Burger Restaurant</h1>
+    </div>
+</section>
+
+<!--Navbar-->
+
+ <!--O nas, Menu+Cennik, Rezerwacje(formularz), Kontakt-->
+
+<section class="nav-bar">
+    <div class="sections">
+        <ul>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link" id="nav-link">Strona Główna</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link" id="nav-link">O Nas</a>
+            </li>
+            <li class="nav-item">
+                <a href="menu.html" class="nav-link" id="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="reservations.html" class="nav-link" id="nav-link">Rezerwacje</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link" id="nav-link">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--Contact form     add novalidate--> 
+<h2>Skontaktuj się z nami!</h2>
+<p>Masz pytania w sprawie rezerwacji, menu, specjalne zyczenia <br> a moze chcesz wynająć cały lokal - skontaktuj się z nami! </p>
+<p>Postaramy się odpowiedzieć na wszsytkie pytania. Jednak pamiętaj! <br> Identyfikujemy się jako Gentlemani, ale charaktery mamy umorusane w błocie. Pytaj rozwaznie! :D Chrum!</p>
+<div class="form-container">
+  <form action="./submit.html" 
+  target="framename" 
+  autocomplete="on"
+  novalidate
+  >
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">* Imię:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" 
+      id="fname" name="firstname" 
+      placeholder="Wpisz swoje imię.." 
+      required
+      minlength="2"
+      maxlength="25">
+      <span class="error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">* Nazwisko:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" 
+      id="lname" name="lastname" 
+      placeholder="Wpisz i nazwisko, kotku.." 
+      required
+      minlength="2"
+      maxlength="25">
+      <span class="error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">* E-mail:</label>
+    </div>
+    <div class="col-75">
+      <input type="email" 
+      id="email" name="email" 
+      placeholder="Jakoś musimy się skontaktować, co nie?.." 
+      required
+      minlength="8">
+      <span class="error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="phone">Numer telefonu:</label>
+    </div>
+    <div class="col-75">
+      <input type="tel" 
+      id="phone" name="phone" 
+      placeholder="Nie wymagamy, ale zachęcamy.."
+      minlength="9"
+      maxlength="25">
+      <span class="error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="topic">* Temat:</label>
+    </div>
+    <div class="col-75">
+      <select id="topic" 
+      name="topic" 
+      required>
+        <option></option>
+        <option value="reservations">Rezerwacje</option>
+        <option value="menu">Menu</option>
+        <option value="job">Praca</option>
+        <option value="rent">Wanjem lokalu</option>
+        <option value="other">Inne</option>
+      </select>
+      <span class="error" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">* Słuchamy, czytamy.</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" 
+      name="subject" 
+      placeholder="Weźze napisz coś ładnie i pełnymi zdaniami. Mamy mase roboty, nie utrudniaj..." 
+      style="height:200px" 
+      required
+      maxlength="250"
+      ></textarea>
+      <span class="error" aria-live="polite"></span>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Wyślij">
+  </div>
+  </form>
+  
+  <div class="additional-contact">
+    <div class="contact-info">
+        <h2>Nie lubisz formualrzy? Zadzwoń bądź wpadnij na burgera!</h2>
+        <p>Wszelkie informacje kontaktowe znajdziesz ponizej &#8609;</p>
+        <div class="contact-field">
+            <p>Naszym chlewikiem zarządza Wieprz Paweł<p>
+                <p>Paweł Kowalski</p>
+                <p>ul. Kormoranów Bosych 21</p>
+                <p>21-324 Niesforne Knurki</p>
+                <p>Nie taplaj sie w blocie niewiadomych, zadzwoń:&nbsp;<a href=" tel: 601123666" id="telephone">601-123-666</a></p>               
+        </div>
+        <div class="contact-info">
+            <h2>Gdzie nas znajdziesz?</h2>
+            <div class="contact-field">
+                <p>Restauracja mieści się w centrum Gdańska</p>
+                <p>Tuz przy Motławie. Tak, zapomnij o parkingu, poruszaj sie trochę. </p>
+                <p>Nie polecamy wizyt w trakcje jarmarku, syf i masa turystów, nie nadązamy z czyszczeniem schodów po nocnych imprezach</p>
+                <p>A tak to wpadajcie:</p>
+                <p>Targ Rybny 123</p>
+                <p>80-173 Gdańsk</p>
+                <p>Telefon do lokalu:&nbsp;<a href=" tel: 610876678" id="telephone"> 601-123-666 ALE! Nie wiemy, czy odbierzemy bo tabaka</a>.</p>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<script src="formValidator.js"></script>
+    
+
+</body>
+</html>

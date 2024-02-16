@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./menu.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    
+    <title>Menu</title>
+</head>
+
+<body>
+    <body>
+        <!--Logo - href na stronę główną, Name Bar -->
+        <section class="logo-bar">
+          <div class="logo-item">
+              <img 
+              src="./images/logo.png" 
+              style="width:100%;"
+              atl="Pig Logo"
+              a href="index.html"
+              class="logo" />
+          </div>
+          <div class="restaurant-name">
+              <h1>Pig Inside the Gentleman – Burger Restaurant</h1>
+          </div>
+      </section>
+      
+      <!--Navbar-->
+      
+       <!--O nas, Menu+Cennik, Rezerwacje(formularz), Kontakt-->
+      
+      <section class="nav-bar">
+          <div class="sections">
+              <ul>
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link" id="nav-link">Strona Główna</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="about.html" class="nav-link" id="nav-link">O Nas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="menu.html" class="nav-link" id="nav-link">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="reservations.html" class="nav-link" id="nav-link">Rezerwacje</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="contact.html" class="nav-link" id="nav-link">Kontakt</a>
+                  </li>
+              </ul>
+          </div>
+      </section>
+      
+      <!--Menu table-->
+      <section class="menu">
+        <div class="menu-container">
+            <h2>Nasze Burgery</h2>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-number">1</div>
+                    <div class="item-name">Serowy Wieprz</div>
+                    <div class="item-ingredients">Bułka Brioche, Sery: Mannouri, Mozzarella di Bufala, Kozi Pleśniowy,  Sałata, Ogórek Kiszony, Cykoria, Sosy </div>
+                    <div class="item-price">32,99 zł.</div>
+                    <button class="item-order" type="button">Zamów</button>
+                </li>
+            </ul>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-number">2</div>
+                    <div class="item-name">Ostra Loszka</div>
+                    <div class="item-ingredients">Bułka Brioche, Sery: Mannouri, Mozzarella di Bufala, Kozi Pleśniowy,  Sałata, Ogórek Kiszony, Cykoria, Sosy </div>
+                    <div class="item-price">39,99 zł.</div>
+                    <button class="item-order" type="button" value="39.99">Zamów</button>
+                </li>
+            </ul>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-number">3</div>
+                    <div class="item-name">Dziki Warchlaczek</div>
+                    <div class="item-ingredients">Bułka Brioche, Sery: Mannouri, Mozzarella di Bufala, Kozi Pleśniowy,  Sałata, Ogórek Kiszony, Cykoria, Sosy </div>
+                    <div class="item-price">26,99 zł.</div>
+                    <button class="item-order" type="button" value="26.99">Zamów</button>
+                </li>
+            </ul>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-number">4</div>
+                    <div class="item-name">Vege Prosiaczek</div>
+                    <div class="item-ingredients">Bułka Brioche, Sery: Mannouri, Mozzarella di Bufala, Kozi Pleśniowy,  Sałata, Ogórek Kiszony, Cykoria, Sosy </div>
+                    <div class="item-price">18,99 zł.</div>
+                    <button class="item-order" type="button" value="18.99">Zamów</button>
+                </li>
+            </ul>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-number">5</div>
+                    <div class="item-name">Nacho Tucznik</div>
+                    <div class="item-ingredients">Bułka Brioche, Sery: Mannouri, Mozzarella di Bufala, Kozi Pleśniowy,  Sałata, Ogórek Kiszony, Cykoria, Sosy </div>
+                    <div class="item-price">45,99 zł.</div>
+                    <button class="item-order" type="button" value="45.99">Zamów</button>
+                </li>
+            </ul>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-number">6</div>
+                    <div class="item-name">Słodki Guziec</div>
+                    <div class="item-ingredients">Bułka Brioche, Sery: Mannouri, Mozzarella di Bufala, Kozi Pleśniowy,  Sałata, Ogórek Kiszony, Cykoria, Sosy </div>
+                    <div class="item-price">34,99 zł.</div>
+                    <button class="item-order" type="button" value="34.99">Zamów</button>
+                </li>
+            </ul>
+            <div class="item-total">
+                <p>Razem zapłacisz: </p>
+                <span id="total">0. 00 zł. </span>
+                <button class="item-total-order" type="button">Opłać zamówienie</button>
+                <button class="cancel-last-item" type="button">Skasuj ostatnie</button>
+            </div>
+            
+                        
+                    
+        </div>
+      </section>
+      <script type="application/javascript" src="calculator.js"></script>
+
+      
+      
+</body>
+</html>
+

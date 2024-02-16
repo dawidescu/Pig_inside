@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    
+    <title>Pig Inside the Gentleman: Burger Restaurant</title>
+</head>
+<body>
+   
+    <!--Logo - href na stronę główną, Name Bar -->
+    <section class="logo-bar">
+        <div class="logo-item">
+            <img 
+            src="./images/logo.png"
+            style="width:100%;"
+            atl="Pig Logo"
+            a href="#index.html"
+            class="logo" />
+        </div>
+        <div class="restaurant-name">
+            <h1>Pig Inside the Gentleman – Burger Restaurant</h1>
+        </div>
+    </section>
+
+    <!--Navbar-->
+
+     <!--O nas, Menu+Cennik, Rezerwacje(formularz), Kontakt-->
+
+     
+    <section class="nav-bar">
+        <div class="sections" id="nav-sections">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" id="active">Strona Główna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" id="nav-link">O Nas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link" id="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservations.html" class="nav-link" id="nav-link">Rezerwacje</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" id="nav-link">Kontakt</a>
+                </li>
+                <a href="javascript:void(0);" class="icon" onclick="menuShrink()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </ul>
+        </div>
+        <script>
+        function menuShrink() {
+            var x = document.getElementById("nav-sections");
+            if (x.classList.contains("responsive")) {
+                x.classList.remove("responsive");
+            } else {
+                x.classList.add("responsive");
+            }
+        }
+        </script>
+    </section>
+    <div class="hello">
+        <h2>Witaj w “Pig Inside the Gentleman”! 🍔</h2>
+        <p>Jesteśmy miejscem, gdzie tradycyjne smaki spotykają się z nowoczesnym podejściem do kuchni. Nasza pasja do burgerów jest tak wielka jak nasza miłość do doskonałych składników.</p>
+        <p>Każdy burger serwowany w “Pig Inside the Gentleman” jest wyjątkowy - od starannie wyselekcjonowanego mięsa, przez świeże warzywa, aż po nasze sekretne sosy.</p>
+        <p>Nasza misja to dostarczanie burgerów, które są nie tylko pyszne, ale także tworzone z szacunkiem dla tradycji i kreatywności.</p>
+        <p>W “Pig Inside the Gentleman” wierzymy, że każdy burger to dzieło sztuki, a nasza restauracja to miejsce, gdzie sztuka ta ożywa.</p>
+        <p>Zapraszamy do “Pig Inside the Gentleman”, gdzie burger to nie tylko posiłek, ale prawdziwe doświadczenie. 🍔🎩</p>
+    </div>
+
+
+    <!-- Hero section - our burgers - slideshow-->
+    <section class="our-burgers">
+        <h1>Nasze specjały</h1>
+        <div class="slideshow-container">
+            <!--full-width images with number and captions-->
+            <div class="slides fade" >
+                <div class="number-text">1 / 4</div>
+                <img src="./images/1.png" style="width:100%;">
+                <div class="text">Podwójny Knur</div>
+            </div>
+            <div class="slides fade">
+                <div class="number-text">2 / 4</div>
+                <img src="./images/2.png" style="width:100%;">
+                <div class="text">Serowy Wieprz</div>
+            </div>
+            <div class="slides fade">
+                <div class="number-text">3 / 4</div>
+                <img src="./images/3.png" style="width:100%;">
+                <div class="text">Vege Prosiaczek</div>
+            </div>
+            <div class="slides fade">
+                <div class="number-text">4 / 4</div>
+                <img src="./images/4.png" style="width:100%;">
+                <div class="text">Ostra Loszka</div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+        <br>
+        <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+   
+
+    <!--Stopka-->
+
+    <footer>&copy;2023. All Rights Reserved</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
