@@ -36,12 +36,15 @@ function validateInput(input) {
   }
 
   // Show or hide the error message
-  const errorMessage = input.nextElementSibling;
-  errorMessage.textContent = message;
-  errorMessage.style.display = valid ? 'none' : 'block';
+  const errorMessage = input?.nextElementSibling;
+  errorMessage?.textContent = message;
+  errorMessage?.style.display = valid ? 'none' : 'block';  
+  console.log("Error msg: ", errorMessage)
+
 
   return valid;
 }
+
 
 // Validate the form on submit
 form.addEventListener('submit', (event) => {
